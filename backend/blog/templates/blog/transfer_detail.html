@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+{% block meta_title %}
+	{{object.title}}
+{% endblock %}
+
+{% block main %}
+	<article>
+		<h1>{{object.title}}</h1>
+		<h2>{{object.content}}</h2>
+		<div>{{object.publish}}</div>
+		<div>{{object.created}}</div>
+		<!-- {{object.content|linebreaks}} -->
+	</article>
+{% endblock %}
